@@ -3,14 +3,11 @@ package MyPackage;
 import org.omg.CORBA.SystemException;
 
 public class Ceo extends Employee {
+	
 
     @Override
     public void AssignManager(Employee manager)  {
-        try{
-            throw new Exception();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        this.manager= manager;
     }
 
     @Override
@@ -23,3 +20,5 @@ public class Ceo extends Employee {
     }
 
 }
+
+
