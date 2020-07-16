@@ -7,6 +7,7 @@ public interface IWorker {
     public void continueWork();
     public void lunch();
     public void signOut();
-    public void recharge();
-    public void oilCheck();
 }
+
+
+

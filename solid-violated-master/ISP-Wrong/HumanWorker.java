@@ -1,6 +1,6 @@
 package MyPackage1;
 
-public class HumanWorker implements IWorker {
+public class HumanWorker implements IHumanWorker {
     @Override
     public void signIn() {
         System.out.println("Hey I'm just signing in");
@@ -31,13 +31,5 @@ public class HumanWorker implements IWorker {
         System.out.println("Hey I'm just signing out");
     }
 
-    @Override
-    public void recharge() {
-        System.out.println("Sorry no implementation for this");
-    }
-
-    @Override
-    public void oilCheck() {
-        System.out.println("Sorry no implementation for this");
-    }
+   
 }

@@ -2,7 +2,7 @@ package MyPackage1;
 
 import MyPackage1.IWorker;
 
-public class Robot implements IWorker {
+public class Robot implements IRobot {
     @Override
     public void signIn() {
         System.out.println("Hey I'm just signing in");
@@ -14,19 +14,10 @@ public class Robot implements IWorker {
     }
 
     @Override
-    public void teaBreak() {
-        System.out.println("Sorry no implementation for this");
-    }
-
-    @Override
     public void continueWork() {
         System.out.println("Hey I'm working");
     }
 
-    @Override
-    public void lunch() {
-        System.out.println("Sorry no implementation for this");
-    }
 
     @Override
     public void signOut() {
