@@ -3,7 +3,7 @@ import control.Usuario;
 public class Registro {
 
 	
-	public static void registrarUsuario(Usuario u) {
+	public static void registrarUsuario(User u) {
 		
 
 		
