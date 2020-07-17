@@ -1,3 +1,4 @@
+
 public class CodHerApp {
     public static void main(final String[] args) {
 
@@ -7,11 +8,11 @@ public class CodHerApp {
         return;
      }
 
-     MailProvider mailProvider = new MailProvider();
-     mailProvider.sendWelcomeEmail(user);
+     IMail mail = new WelcomeMail();
+     mail.sendMail(user);
 
-     PaymentProvider paymentProvider = new PaymentProvider();
-     paymentProvider.makePayment(100);
+     IPayment payment = new CashPayment();
+     payment.makePayment(100);
      
     }
  }

@@ -1,7 +1,7 @@
 
-public class MailProvider {
+public class WelcomeMail implements IMail {
 
-    public void sendWelcomeEmail(User user){
+    public void sendMail(User user){
 
       System.out.println("Sending Email to User");
       System.out.println("To: "+ user.emailAddress);
@@ -11,5 +11,7 @@ public class MailProvider {
       System.out.println("Welcome to CodHer! \nWe are happy to have you as a user :-) ");
       
     }
+
+
 
 }
